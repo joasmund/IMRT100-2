@@ -158,15 +158,19 @@ while not motor_serial.shutdown_now :
     elif dist_1>50: 
         drive_robot(dist_1, dist_2, 0.3)
         turn_robot(RIGHT,1)
+        print("hoyre")
 
     elif dist_1<10 and dist_3<10:
         turn_robot(LEFT,1)
+        print("venstre")
 
     elif dist_1<10 and dist_3<10 and dist_2<10: 
         turn_robot(RIGHT,1)
         turn_robot(RIGHT,1)
+        print("180")
     elif dist_3>10 or dist_4>10:
         turn_robot(RIGHT,1)
+        print("hoyre")
 
 
 
@@ -176,6 +180,7 @@ while not motor_serial.shutdown_now :
     else:
         # If there is nothing in front of the robot it continus driving forwards
         drive_robot(FORWARDS, 0.1)
+        print("fram")
 
 
 
