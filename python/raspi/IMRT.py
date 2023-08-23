@@ -141,10 +141,10 @@ while not motor_serial.shutdown_now :
  
 
     # Get and print readings from distance sensors
-    dist_1 = motor_serial.get_dist_4()
+    dist_1 = motor_serial.get_dist_1()
     dist_2 = motor_serial.get_dist_2()
     dist_3 = motor_serial.get_dist_3()
-    dist_4 = motor_serial.get_dist_1()
+    dist_4 = motor_serial.get_dist_4()
     print("Dist hoyre:", dist_1, "   Dist venstre:", dist_2, "   Dist foran1:", dist_3, "   Dist foran2:", dist_4)
 
  
