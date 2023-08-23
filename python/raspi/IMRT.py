@@ -150,13 +150,13 @@ while not motor_serial.shutdown_now :
  
 
     # Check if there is an obstacle in the way
-    if dist_1>50 and dist_2>50 and dist_3>50: 
+    if dist_1>120 and dist_2>120 and dist_3>120: 
         stop_robot(30)
         #play song
 
 
     elif dist_1>50: 
-        drive_robot(dist_1, dist_2, 0.15)
+        drive_robot(dist_1, dist_2, 0.1)
         turn_robot(RIGHT,1)
         print("hoyre", dist_1)
 
@@ -179,7 +179,7 @@ while not motor_serial.shutdown_now :
 
     else:
         # If there is nothing in front of the robot it continus driving forwards
-        drive_robot(dist_1,dist_2, 0.05)
+        drive_robot(dist_1,dist_2, 0.025)
         print("fram")
 
 
