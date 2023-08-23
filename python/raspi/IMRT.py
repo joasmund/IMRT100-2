@@ -156,7 +156,7 @@ while not motor_serial.shutdown_now :
 
 
     elif dist_1>50: 
-        drive_robot(dist_1, dist_2, 0.3)
+        drive_robot(dist_1, dist_2, 0.15)
         turn_robot(RIGHT,1)
         print("hoyre", dist_1)
 
