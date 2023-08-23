@@ -179,7 +179,7 @@ while not motor_serial.shutdown_now :
 
     else:
         # If there is nothing in front of the robot it continus driving forwards
-        drive_robot(dist_1,dist_2, 0.1)
+        drive_robot(dist_1,dist_2, 0.05)
         print("fram")
 
 
